@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e6c27a;
+    font-family: 'Georgia', serif;
+}
+
+header {
+    background-color: #0d0d0d;
+    padding: 15px;
+    border-bottom: 1px solid #e6c27a;
+}
+
+nav a {
+    color: #e6c27a;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e6c27a;
+    margin-top: 150px;
+    font-size: 12px;
+}
