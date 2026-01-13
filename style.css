@@ -132,3 +132,49 @@ footer {
     font-size: 12px;
     color: #c9ad71;
 }
+.articles {
+    max-width: 840px;
+    margin: 80px auto 0;
+    padding: 0 16px 80px;
+}
+
+.articles h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.articles-intro {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.article-group {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.article-group h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.article-item {
+    margin-bottom: 18px;
+}
+
+.article-item h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.article-meta {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+
+.article-desc {
+    font-size: 14px;
+    line-height: 1.6;
+}
