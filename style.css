@@ -5,16 +5,13 @@ body {
     background-color: #050505;
     color: #e6c27a;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    line-height: 1.6; /* + okunabilirlik için eklendi */
 }
 
 /* Başlıklar daha akademik serif font */
 h1, h2, h3 {
     font-family: "Georgia", "Times New Roman", serif;
     margin-top: 0;
-    margin-bottom: 12px; /* + alt boşluk eklendi */
     color: #f0d8a0;
-    letter-spacing: 0.03em; /* + hafif elit hava */
 }
 
 /* Üst menü */
@@ -88,19 +85,7 @@ nav a:hover {
     opacity: 0.8;
 }
 
-/* Genel paragraf aralığı – tüm sayfalara uygulanır */
-p {
-    margin-bottom: 16px;
-}
-
-/* Hakkımda gibi normal içerik section'ları için ortalama genişlik */
-main > section {
-    max-width: 840px;
-    margin: 80px auto 0;
-    padding: 0 16px 40px;
-}
-
-/* Sayfalardaki normal içerik blokları (isteğe bağlı genel kullanım) */
+/* Sayfalardaki normal içerik blokları */
 .section {
     max-width: 840px;
     margin: 120px auto 0;
@@ -113,16 +98,6 @@ main > section {
     line-height: 1.7;
 }
 
-/* Liste görünümü – Hakkımda sayfasındaki bullet'lar için */
-ul {
-    margin-left: 1.2rem;
-    margin-bottom: 16px;
-}
-
-ul li {
-    margin-bottom: 6px;
-}
-
 /* Alt bilgi (footer) */
 footer {
     text-align: center;
@@ -132,49 +107,27 @@ footer {
     font-size: 12px;
     color: #c9ad71;
 }
-.articles {
-    max-width: 840px;
-    margin: 80px auto 0;
-    padding: 0 16px 80px;
+
+/* --- HAKKIMDA FOTOĞRAFI EKLEMESİ --- */
+
+/* Desktop ve büyük ekranlar için portre yerleşimi */
+.about-photo {
+    max-width: 320px;
+    border-radius: 4px;
+    margin: 0 32px 24px 0;
+    float: left;
 }
 
-.articles h1 {
-    text-align: center;
-    margin-bottom: 24px;
-}
+/* Mobil ve dar ekranlar: fotoğraf üstte, metin altta olsun */
+@media (max-width: 768px) {
+    .section {
+        text-align: left;
+    }
 
-.articles-intro {
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 40px;
-}
-
-.article-group {
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.article-group h2 {
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.article-item {
-    margin-bottom: 18px;
-}
-
-.article-item h3 {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.article-meta {
-    font-size: 12px;
-    opacity: 0.8;
-    margin-bottom: 4px;
-}
-
-.article-desc {
-    font-size: 14px;
-    line-height: 1.6;
+    .about-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 24px auto;
+        max-width: 70%;
+    }
 }
